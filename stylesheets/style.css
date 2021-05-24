@@ -1,0 +1,85 @@
+*{
+    outline: 0px dashed green;
+}
+#main-container{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+    #conversation-cont{
+        border: 1px solid black;
+        border-radius: 5px 5px;
+        height: 400px;
+        width: 350px;
+        overflow-y: scroll;
+        margin: auto;
+        margin-top: 20px;
+        padding: 5px;
+        font-size: 13px;
+        text-align: left;
+    }
+        input{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 70%;
+            padding: 5px;
+        }
+
+.btn{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px gray;
+    user-select: none;
+    text-decoration: none;
+}
+    .btn:hover{
+        cursor: pointer;
+        box-shadow: 0 0 5px gray;
+    }
+
+#logout{
+    float: right;   
+    bottom: 0px;
+    background-color: red;
+    color: white;
+    border-radius: 0px;
+}
+#send{
+    background-color: #0080ff;
+    color: white;
+}
+p{
+    margin: 0px;
+    background-color: #bafcce;
+    border: 1px solid #18c08a;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+    border-radius: 10px 10px 10px 0px;
+}
+.sent-message{
+    margin: 0px;
+    background-color: azure;
+    border: 1px solid #0080ff;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+    border-radius: 10px 10px 0px 10px;
+}
+#sent-msg{
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+}
+.status{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: gray;
+    display: block;
+    border: none;
+    background-color: transparent;
+}
