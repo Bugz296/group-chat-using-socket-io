@@ -3,9 +3,8 @@
  */
 const express = require('express');
 const session = require('express-session');
-const http = require('http');
 const app = express();
-const server = app.listen(8000);
+const server = app.listen(3005);
 const io = require('socket.io')(server);
 
 
@@ -23,7 +22,7 @@ app.set('view engine', 'ejs');
 /**
  * Routes
  */
-app.get('/', function(req, res){
+app.get('/assignments/gcsio/', function(req, res){
     let session_id = req.sessionID;
     res.render('index', {session_id});
 });
