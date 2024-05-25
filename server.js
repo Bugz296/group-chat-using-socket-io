@@ -5,7 +5,7 @@ const express = require('express');
 const session = require('express-session');
 const app = express();
 const server = app.listen(3005);
-const io = require('socket.io')(server);
+const io = require('socket.io')(server, { path: '/assignments/gcsio/socket.io' });
 
 
 app.use(session({
