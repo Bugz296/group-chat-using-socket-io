@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var socket = io();
+    var socket = io('/', { path: '/assignments/gcsio/socket.io'});
     /* Ask for their Name If null = Prompt Again Else = Proceed */
     var name = prompt("Please Enter Your Name: ");
     if(!name){
